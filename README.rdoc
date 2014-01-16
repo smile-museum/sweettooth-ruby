@@ -1,1 +1,28 @@
-Sweet Tooth Ruby
+= Sweet Tooth Ruby bindings
+
+== Installation
+
+You can install the Sweet Tooth gem by running:
+
+  gem install sweettooth
+
+== Basic Usage
+
+  require "sweettooth"
+  SweetTooth.api_key = "sk_gUjtToMzKybHZ3yGg3C4Sv4L"
+
+  SweetTooth::Customer.create(
+    :first_name => "Wayne",
+    :last_name => "Rooney",
+    :email => "wrooney@example.com"
+  )
+
+== Requirements
+
+* Ruby 1.8.7 or above. (Ruby 1.8.6 may work if you load
+  ActiveSupport.)
+* rest-client, multi_json
+
+== Tests
+
+Test cases can be run with: `bundle exec rake test`

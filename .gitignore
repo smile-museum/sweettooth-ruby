@@ -1,0 +1,9 @@
+# Ignore gem stuff
+/.bundle
+/sweettooth-*.gem
+.rvmrc
+Gemfile.lock
+
+# Mac stuff
+.DS_Store
+
