@@ -17,6 +17,7 @@ module SweetTooth
 
     def self.object_classes
       @object_classes ||= {
+        'activity' => Activity,
         'customer' => Customer,
         'event' => Event,
         'redemption' => Redemption,

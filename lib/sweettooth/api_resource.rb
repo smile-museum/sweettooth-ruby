@@ -4,11 +4,16 @@ module SweetTooth
       self.name.split('::')[-1]
     end
 
+    # Override for irregular plurals, eg. 'Activities'
+    def self.class_name_plural
+      "#{self.class_name}s"
+    end
+
     def self.url()
       if self == APIResource
         raise NotImplementedError.new('APIResource is an abstract class.  You should perform actions on its subclasses (Charge, Customer, etc.)')
       end
-      "/v1/#{CGI.escape(class_name.downcase)}s"
+      "/v1/#{CGI.escape(class_name_plural.downcase)}"
     end
 
     def url

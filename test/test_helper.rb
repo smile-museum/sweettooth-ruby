@@ -72,6 +72,21 @@ def test_event(params={})
   }.merge(params)
 end
 
+def test_activity(params={})
+  {
+    :_object => "activity",
+    :id => "act_test_activity",
+    :account_id => "acc_test_account",
+    :channel_id => "cha_test_channel",
+    :customer_id => "cus_test_customer",
+    :verb => "signup",
+    :object => {},
+    :processed => nil,
+    :created => "2014-01-14T19:25:32.000Z",
+    :updated => "2014-01-14T19:25:32.000Z"
+  }.merge(params)
+end
+
 def test_redemption(params={})
   {
     :_object => "redemption",
