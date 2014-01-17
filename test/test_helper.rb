@@ -57,21 +57,6 @@ def test_customer_array
   }
 end
 
-def test_event(params={})
-  {
-    :_object => "event",
-    :id => "eve_test_event",
-    :account_id => "acc_test_account",
-    :channel_id => "cha_test_channel",
-    :customer_id => "cus_test_customer",
-    :event_type => "signup",
-    :data => {},
-    :processed => nil,
-    :created => "2014-01-14T19:25:32.000Z",
-    :updated => "2014-01-14T19:25:32.000Z"
-  }.merge(params)
-end
-
 def test_activity(params={})
   {
     :_object => "activity",

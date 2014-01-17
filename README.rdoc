@@ -26,3 +26,7 @@ You can install the Sweet Tooth gem by running:
 == Tests
 
 Test cases can be run with: `bundle exec rake test`
+
+== Acknowledgements
+
+Inspired by the Stripe Ruby bindings
