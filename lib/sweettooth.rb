@@ -25,8 +25,6 @@ require 'sweettooth/singleton_api_resource'
 require 'sweettooth/collection_object'
 require 'sweettooth/activity'
 require 'sweettooth/customer'
-require 'sweettooth/redemption'
-require 'sweettooth/redemption_option'
 require 'sweettooth/spending'
 require 'sweettooth/spending_option'
 

@@ -72,20 +72,6 @@ def test_activity(params={})
   }.merge(params)
 end
 
-def test_redemption(params={})
-  {
-    :_object => "redemption",
-    :id => "red_test_redemption",
-    :customer_id => "cus_test_customer",
-    :channel_id => "cha_test_channel",
-    :redemption_option_id => "rop_test_redemption_option",
-    :status => "completed",
-    :comment => nil,
-    :created => "2014-01-14T19:25:32.000Z",
-    :updated => "2014-01-14T19:25:32.000Z"
-  }.merge(params)
-end
-
 def test_spending(params={})
   {
     :_object => "spending",
@@ -109,26 +95,6 @@ def test_spending_option(params={})
     :created => "2014-01-14T17:25:32.000Z",
     :updated => "2014-01-14T17:25:32.000Z"
   }.merge(params)
-end
-
-def test_redemption_option(params={})
-  {
-    :_object => "redemption_option",
-    :id => "rop_test_redemption_option",
-    :account_id => "acc_test_account",
-    :name => "Free Shipping",
-    :description => "Spend 100 points to receive free shipping",
-    :created => "2014-01-14T17:25:32.000Z",
-    :updated => "2014-01-14T17:25:32.000Z"
-  }.merge(params)
-end
-
-def test_redemption_option_array
-  {
-    :items => [test_redemption_option, test_redemption_option, test_redemption_option],
-    :_object => 'collection',
-    :url => '/v1/redemption_options'
-  }
 end
 
 def test_spending_option_array
