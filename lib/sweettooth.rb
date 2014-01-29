@@ -27,6 +27,8 @@ require 'sweettooth/activity'
 require 'sweettooth/customer'
 require 'sweettooth/redemption'
 require 'sweettooth/redemption_option'
+require 'sweettooth/spending'
+require 'sweettooth/spending_option'
 
 # Errors
 require 'sweettooth/errors/sweettooth_error'
@@ -36,7 +38,8 @@ require 'sweettooth/errors/invalid_request_error'
 require 'sweettooth/errors/authentication_error'
 
 module SweetTooth
-  @api_base = 'https://api.sweettooth.io'
+  # @api_base = 'https://api.sweettooth.io'
+  @api_base = 'http://local-api.sweettooth.io:3000'
 
   @verify_ssl_certs = true
 
