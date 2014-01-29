@@ -36,8 +36,7 @@ require 'sweettooth/errors/invalid_request_error'
 require 'sweettooth/errors/authentication_error'
 
 module SweetTooth
-  # @api_base = 'https://api.sweettooth.io'
-  @api_base = 'http://local-api.sweettooth.io:3000'
+  @api_base = 'https://api.sweettooth.io'
 
   @verify_ssl_certs = true
 
