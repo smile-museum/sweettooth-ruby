@@ -1,5 +1,5 @@
 module SweetTooth
-  class RedemptionOption < APIResource
+  class SpendingOption < APIResource
     include SweetTooth::APIOperations::List
   end
 end
