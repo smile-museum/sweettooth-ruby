@@ -19,6 +19,8 @@ module SweetTooth
       @object_classes ||= {
         'activity' => Activity,
         'customer' => Customer,
+        'spending' => Spending,
+        'spending_option' => SpendingOption,
         'redemption' => Redemption,
         'redemption_option' => RedemptionOption,
         'collection' => CollectionObject,
